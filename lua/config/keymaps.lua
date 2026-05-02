@@ -3,3 +3,4 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("t", "<D-\\><D-\\>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+vim.keymap.set("t", "<D-/><D-/>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
