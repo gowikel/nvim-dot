@@ -4,3 +4,4 @@
 
 vim.keymap.set("t", "<D-\\><D-\\>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("t", "<D-/><D-/>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
