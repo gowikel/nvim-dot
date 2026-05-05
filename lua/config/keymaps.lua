@@ -5,3 +5,5 @@
 vim.keymap.set("t", "<D-\\><D-\\>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("t", "<D-/><D-/>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+vim.keymap.set("i", "<D-v>", "<C-r>+", { desc = "Paste from clipboard" })
+vim.keymap.set("t", "<D-v>", '<C-\\><C-n>"+pi', { desc = "Paste from clipboard" })
