@@ -6,7 +6,7 @@ vim.g.lazyvim_inlay_hints = true
 
 if vim.g.neovide then
   -- Font (required — terminal font doesn't carry over)
-  vim.o.guifont = "JetBrainsMono Nerd Font:h16"
+  vim.o.guifont = "JetBrainsMono Nerd Font:h14"
 
   -- Animations
   vim.g.neovide_cursor_animation_length = 0.1
@@ -16,7 +16,7 @@ if vim.g.neovide then
   vim.g.neovide_opacity = 1.0
 
   -- Scale (useful for HiDPI/Retina)
-  vim.g.neovide_scale_factor = 1.0
+  vim.g.neovide_scale_factor = 1.2
 
   -- Padding
   vim.g.neovide_padding_top = 8
