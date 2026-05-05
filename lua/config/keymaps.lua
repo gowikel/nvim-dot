@@ -14,3 +14,10 @@ vim.keymap.set("t", "<D-/><D-/>", "<C-\\><C-n>", { desc = "Exit terminal mode" }
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("i", "<D-v>", "<C-r>+", { desc = "Paste from clipboard" })
 vim.keymap.set("t", "<D-v>", '<C-\\><C-n>"+pi', { desc = "Paste from clipboard" })
+
+vim.keymap.set("n", "<leader>cp", function()
+  local path = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(0), ":.")
+  vim.fn.setreg("+", path)
+  vim.notify(path, vim.log.levels.INFO)
+end, { desc = "Copy relative path" })
+
