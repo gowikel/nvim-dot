@@ -21,11 +21,22 @@ return {
         require("neotest-python"),
         require("neotest-golang"),
         require("neotest-jest"),
-        require("neotest-bun"),
         require("neotest-vitest"),
         require("neotest-playwright").adapter({}),
         require("neotest-rust"),
         require("neotest-elixir"),
+        (function()
+          local bun = require("neotest-bun")
+          local orig_root = bun.root
+          bun.root = function(dir)
+            local root = orig_root(dir)
+            if root and vim.fn.filereadable(root .. "/bun.lockb") == 0 then
+              return nil
+            end
+            return root
+          end
+          return bun
+        end)(),
       })
     end,
     keys = {
