@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.g.lazyvim_inlay_hints = true
+vim.o.exrc = true
 
 if vim.g.neovide then
   -- Font (required — terminal font doesn't carry over)
