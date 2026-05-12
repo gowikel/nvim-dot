@@ -8,6 +8,9 @@ vim.keymap.del("n", "<leader>K") -- Keywordprg
 vim.keymap.del("n", "<leader>S") -- Select scratch buffer
 vim.keymap.del("n", "<leader>?") -- Buffer keymaps (which-key)
 vim.keymap.del("n", "<leader>`") -- Switch to other buffer
+vim.keymap.del("n", "<leader>sp") -- Search for plugin spec
+vim.keymap.del("n", "<leader>sa") -- Search for autocmds
+vim.keymap.del("n", "<leader>sH") -- Search for highlights
 
 vim.keymap.set("t", "<D-\\><D-\\>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("t", "<D-/><D-/>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
@@ -20,4 +23,3 @@ vim.keymap.set("n", "<leader>cp", function()
   vim.fn.setreg("+", path)
   vim.notify(path, vim.log.levels.INFO)
 end, { desc = "Copy relative path" })
-
