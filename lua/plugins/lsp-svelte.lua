@@ -4,10 +4,16 @@ return {
     opts = {
       servers = {
         svelte = {
-          root_dir = function(fname)
+          root_dir = function(bufnr, on_dir)
+            local fname = type(bufnr) == "number" and vim.api.nvim_buf_get_name(bufnr) or bufnr
             local util = require("lspconfig.util")
-            return util.root_pattern("svelte.config.js", "svelte.config.mjs", "svelte.config.ts", "package.json")(fname)
-              or util.find_git_ancestor(fname)
+            local root = util.root_pattern("svelte.config.js", "svelte.config.mjs", "svelte.config.ts", "package.json")(fname)
+              or vim.fs.root(fname, { ".git" })
+            if type(on_dir) == "function" then
+              on_dir(root)
+            else
+              return root
+            end
           end,
         },
       },
