@@ -1,0 +1,19 @@
+lua/config/lazy.lua
+  s_c714a1bfd5f4d2::t_45a7d414386627 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "094cafd38b5b4c82c2437243540262ee7ab343ed",
+  "prompts": {},
+  "sessions": {
+    "s_c714a1bfd5f4d2": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f83e3-7af2-7033-836a-8c22d2b2ecd0",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "Pedro Piquero <4339072+gowikel@users.noreply.github.com>"
+    }
+  }
+}
