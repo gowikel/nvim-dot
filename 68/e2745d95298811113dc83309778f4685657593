@@ -1,0 +1,21 @@
+lua/plugins/gradle.lua
+  s_dd4c66edc7734f::t_f52c7bef358f2a 1-17
+lua/plugins/maven.lua
+  s_dd4c66edc7734f::t_5e05bf1701e56e 1-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "68e2745d95298811113dc83309778f4685657593",
+  "prompts": {},
+  "sessions": {
+    "s_dd4c66edc7734f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b326ecb6-f5aa-4167-9c8b-9a240a7587ed",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Pedro Piquero <4339072+gowikel@users.noreply.github.com>"
+    }
+  }
+}
