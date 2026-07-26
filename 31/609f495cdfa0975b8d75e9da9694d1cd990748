@@ -1,0 +1,21 @@
+lazy-lock.json
+  s_c1712f45721627::t_45fdc765cd9682 4,8,11,18,25,29,31,43-47,50,54,61
+lua/config/lazy.lua
+  s_c1712f45721627::t_055955cdadca54 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "31609f495cdfa0975b8d75e9da9694d1cd990748",
+  "prompts": {},
+  "sessions": {
+    "s_c1712f45721627": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8e2b869a-3847-41d1-93c5-76720bb66e45",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Pedro Piquero <4339072+gowikel@users.noreply.github.com>"
+    }
+  }
+}
