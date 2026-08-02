@@ -1,0 +1,22 @@
+lua/plugins/projects.lua
+  s_ac02fa840e229e::t_6ed12556cf8025 9-11
+  s_ac02fa840e229e::t_43b5ff244444ae 1-8,27-32
+  s_ac02fa840e229e::t_95bc02c0f6ccdb 12
+  s_ac02fa840e229e::t_fc471926d47cea 13-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "22850e7e227e58e34c1dbb9e9a6ef3a54a28fde8",
+  "prompts": {},
+  "sessions": {
+    "s_ac02fa840e229e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb362-5945-7ff1-b1e3-1c4f0afee132",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "Pedro Piquero <4339072+gowikel@users.noreply.github.com>"
+    }
+  }
+}
