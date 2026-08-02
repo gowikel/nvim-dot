@@ -1,0 +1,21 @@
+lua/plugins/mason.lua
+  s_0c6e58576d77b0::t_0dee8bfca12c93 5
+lua/plugins/lsp-htmx.lua
+  s_0c6e58576d77b0::t_2d11eabf5e0e10 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "dfa3a89a7b51493fa0c6652e28f670bbf1481089",
+  "prompts": {},
+  "sessions": {
+    "s_0c6e58576d77b0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a7aa4bcb-bfaa-4c6f-9ca2-fd7e28d5f216",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Pedro Piquero <4339072+gowikel@users.noreply.github.com>"
+    }
+  }
+}
