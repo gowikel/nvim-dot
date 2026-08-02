@@ -1,0 +1,19 @@
+after/queries/html/injections.scm
+  s_0c6e58576d77b0::t_9f9368445ae22f 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "f48676057287ca08a5b22141855bfab08903a875",
+  "prompts": {},
+  "sessions": {
+    "s_0c6e58576d77b0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a7aa4bcb-bfaa-4c6f-9ca2-fd7e28d5f216",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Pedro Piquero <4339072+gowikel@users.noreply.github.com>"
+    }
+  }
+}
