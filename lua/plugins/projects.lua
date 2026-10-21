@@ -3,6 +3,7 @@ return {
     "folke/snacks.nvim",
     opts = {
       picker = {
+        layout = { preset = "default", layout = { width = 0.98 } },
         sources = {
           projects = {
             dev = { "~/Code/cvf", "~/Code/other", "~/Code/personal" },
