@@ -9,11 +9,9 @@ return {
       "nvim-neotest/neotest-python",
       "fredrikaverpil/neotest-golang",
       "haydenmeade/neotest-jest",
-      "arthur944/neotest-bun",
       "marilari88/neotest-vitest",
       { "thenbe/neotest-playwright", build = "npm ci" },
       "rouge8/neotest-rust",
-      "jfpedroza/neotest-elixir",
     },
     opts = function(_, opts)
       opts.adapters = opts.adapters or {}
@@ -24,19 +22,6 @@ return {
         require("neotest-vitest"),
         require("neotest-playwright").adapter({}),
         require("neotest-rust"),
-        require("neotest-elixir"),
-        (function()
-          local bun = require("neotest-bun")
-          local orig_root = bun.root
-          bun.root = function(dir)
-            local root = orig_root(dir)
-            if root and vim.fn.filereadable(root .. "/bun.lockb") == 0 then
-              return nil
-            end
-            return root
-          end
-          return bun
-        end)(),
       })
     end,
     keys = {

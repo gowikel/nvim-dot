@@ -9,7 +9,6 @@ return {
         emmet_language_server = {
           filetypes = {
             "css",
-            "eruby",
             "html",
             "htmldjango",
             "javascriptreact",
