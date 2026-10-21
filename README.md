@@ -5,8 +5,7 @@ as a starting template.
 
 ## Install
 
-The same configuration runs on macOS and Linux; platform differences are resolved at
-runtime (Java comes from SDKMAN when it is installed, otherwise from `PATH`).
+The same configuration runs on macOS and Linux.
 
 Link the repository into Neovim's config directory and start Neovim. Plugin versions
 are pinned in `lazy-lock.json` and installed on first start.

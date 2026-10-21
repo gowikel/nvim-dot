@@ -2,7 +2,7 @@ return {
   {
     "mason-org/mason.nvim",
     opts = {
-      ensure_installed = { "jdtls", "htmx-lsp" },
+      ensure_installed = { "htmx-lsp" },
     },
   },
 }
