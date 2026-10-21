@@ -25,11 +25,5 @@ vim.keymap.set("n", "<leader>cp", function()
 end, { desc = "Copy relative path" })
 
 vim.keymap.set("n", "<leader>gB", function()
-  Snacks.picker.git_branches({
-    all = true, -- include origin/* branches
-    confirm = function(picker, item)
-      picker:close()
-      Snacks.picker.git_diff({ base = item.branch, group = true })
-    end,
-  })
+  require("config.gitdiff").open()
 end, { desc = "Diff against branch" })
