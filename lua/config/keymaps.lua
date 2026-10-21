@@ -11,6 +11,8 @@ vim.keymap.del("n", "<leader>`") -- Switch to other buffer
 vim.keymap.del("n", "<leader>sp") -- Search for plugin spec
 vim.keymap.del("n", "<leader>sa") -- Search for autocmds
 vim.keymap.del("n", "<leader>sH") -- Search for highlights
+vim.keymap.del("n", "<leader>gG") -- Lazygit (cwd)
+vim.keymap.del("n", "<leader>gL") -- Git Log (cwd)
 
 vim.keymap.set("t", "<D-\\><D-\\>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("t", "<D-/><D-/>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
@@ -24,6 +26,10 @@ vim.keymap.set("n", "<leader>cp", function()
   vim.notify(path, vim.log.levels.INFO)
 end, { desc = "Copy relative path" })
 
-vim.keymap.set("n", "<leader>gB", function()
+vim.keymap.set("n", "<leader>gb", function()
   require("config.gitdiff").open()
 end, { desc = "Diff against branch" })
+
+vim.keymap.set("n", "<leader>gB", function()
+  Snacks.picker.git_log_line()
+end, { desc = "Git Blame Line" })
