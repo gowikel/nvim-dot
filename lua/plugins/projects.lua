@@ -5,7 +5,7 @@ return {
       picker = {
         sources = {
           projects = {
-            dev = { "~/Code/cvf", "~/Code/personal" },
+            dev = { "~/Code/cvf", "~/Code/other", "~/Code/personal" },
             filter = {
               paths = { ["~/.gemini"] = false },
             },
