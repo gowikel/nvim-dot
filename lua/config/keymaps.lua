@@ -23,3 +23,13 @@ vim.keymap.set("n", "<leader>cp", function()
   vim.fn.setreg("+", path)
   vim.notify(path, vim.log.levels.INFO)
 end, { desc = "Copy relative path" })
+
+vim.keymap.set("n", "<leader>gB", function()
+  Snacks.picker.git_branches({
+    all = true, -- include origin/* branches
+    confirm = function(picker, item)
+      picker:close()
+      Snacks.picker.git_diff({ base = item.branch, group = true })
+    end,
+  })
+end, { desc = "Diff against branch" })
