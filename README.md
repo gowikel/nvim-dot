@@ -1,3 +1,8 @@
+> [!WARNING]
+> **Deprecated — see [gowikel/dotenv](https://github.com/gowikel/dotenv).**
+> This configuration now lives in `dotenv`, which manages `~/.config/nvim` with chezmoi.
+> This repository is archived and no longer maintained; it is kept for history only.
+
 # NeoVIM dotfiles
 
 This is my personal configuration for neovim, using [LazyVim](https://github.com/LazyVim/LazyVim),
